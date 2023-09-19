@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Deci Contact Form</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <h1 id="title">Deci Contact Form</h1>
+      <p id="description" class="description">Thank you for taking the time inserting your contact details! We'll call you as soon as possible.</p>
+    </header>
+
+    <form id="survey-form" action="https://survey-form.freecodecamp.rocks/">
+
+      <div class="form-group">
+        <label id="name-label" for="name"><span class="heading">Name</span></label>
+        <input id="name" name="name" type="text" placeholder="Insert your Complete Name" required/>
+      </div>
+
+      <div class="form-group">
+        <label id="email-label" for="email"><span class="heading">Email</span></label>
+        <input id="email" name="email" type="email" placeholder="Insert a valid email address" required/>
+      </div>
+
+      <div class="form-group">
+        <label id="number-label" for="number"><span class="heading">Number of company</span></label>
+        <input id="number" name="number" type="number" min="1" max="50" placeholder="Give total number of owned businesses" required/>
+      </div>
+
+      <div class="form-group">
+        <p class="heading">What help would you need from us?</p>
+        <select id="dropdown" name="dropdown">
+          <option disabled selected value>Select an option</option>
+          <option value="smm">Social Media Marketing</option>
+          <option value="seo">Search Engine Optimization (SEO)</option>
+          <option value="ppc">Pay Per Click (PPC) Advertising</option>
+          <option value="em">Email Marketing</option>
+          <option value="wdd">Website Design & Development</option>
+          <option value="cm">Content Marketing</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p class="heading">What type of business do you own?</p>
+        <label for="sme-startup"><input id="sme-startup" name="business-type" type="radio" value="sme-startup" class="inline" required/> SME/ Start-up</label>
+        <label for="large-corporation"><input id="large-corporation" name="business-type" type="radio" value="large-corporation" class="inline" required/> Large Corporation</label>
+      </div>
+
+      <div class="form-group">
+        <p class="heading">What type of business do you own?</p>
+        <label for="brand-awareness"><input id="brand-awareness" name="brand-awareness" type="checkbox" value="brand-awareness" class="inline" required/> Increase brand awareness</label>
+        <label for="high-quality-leads"><input id="high-quality-leads" name="high-quality-leads" type="checkbox" value="high-quality-leads" class="inline" required/> Generate high-quality leads</label>
+        <label for="acquire-customers"><input id="acquire-customers" name="acquire-customers" type="checkbox" value="acquire-customers" class="inline" required/> Acquire new customers</label>
+        <label for="website-traffic"><input id="website-traffic" name="website-traffic" type="checkbox" value="website-traffic" class="inline" required/> Increase website traffic</label>
+        <label for="industry-authority"><input id="industry-authority" name="industry-authority" type="checkbox" value="industry-authority" class="inline" required/> Establish industry authority</label>
+        <label for="customer-value"><input id="customer-value" name="customer-value" type="checkbox" value="customer-value" class="inline" required/> Increase customer value</label>
+        <label for="brand-engagement"><input id="brand-engagement" name="brand-engagement" type="checkbox" value="brand-engagement" class="inline" required/> Boost brand engagement</label>
+        <label for="revenue"><input id="revenue" name="revenue" type="checkbox" value="revenue" class="inline" required/> Increase revenue</label>
+        <label for="internal-brand"><input id="internal-brand" name="internal-brand" type="checkbox" value="internal-brand" class="inline" required/> Improve internal brand</label>
+      </div>
+
+      <div class="form-group">
+        <p class="heading">Provide a bio:</p>
+        <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Insert other details you would like to share to understand your business better" class="textarea"></textarea>
+      </div>
+
+      <div class="form-group">
+        <input id="submit" type="submit" value="Submit" />
+      </div>
+
+    </form>
+
+  </body>
+</html>
